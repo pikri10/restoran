@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restoran</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="restoran.css">
+</head>
+
+<body background="https://www.teahub.io/photos/full/41-419298_background-image-for-restaurant-website.jpg">
+    <!-- NAVBAR -->
+    <div class="w3-black right">
+        <img src="https://i.postimg.cc/hv6Hj1f5/kisspng-logo-restaurant-restaurant-5ac3e61318fb21-7232547015227878591023.png" width="50" height="50" align="left" style="padding-bottom: 0.5%;">
+        <a href="#home" class="w3-bar-item w3-button" id="home">Home</a>
+        <a href="#menu" class="w3-bar-item w3-button">Daftar Menu</a>
+        <a href="#bayar" class="w3-bar-item w3-button">Pembayaran</a>
+    </div>
+    <!-- AKHIR NAVBAR -->
+
+    <h1 class="center text judul">RESTORAN PAK ANGLING</h1>
+    <img src="https://i.postimg.cc/v89PbFWG/eb4f749fd1c95eefe5cccbcd325d8299.png" class="center" width="400" height="400">
+    <p>Restoran Pak Angling merupakan sebuah restoran tradisional. Restoran ini sudah berdiri sejak 1980. Restoran ini berlokasi di Bandung, Jawa Barat.</p>
+    <p>Restoran Pak Angling sudah terkenal sejak dulu karena menyajikan makanan tradisional yang enak dan murah. Banyak warga lokal bahkan pengunjung dari manca negara yang datang kesini untuk mencicipi makanan khas restoran ini.</p><br>
+    <p>Restoran ini menyajikan banyak sekali menu tradisional yang dapat dicicipi. Berikut daftar menunya.</p>
+    <table class="center table" border="" id="menu">
+        <tr>
+            <td>Nama Makanan</td>
+            <td>Harga</td>
+        </tr>
+        <tr>
+            <td>Rendang</td>
+            <td>Rp50.000</td>
+        </tr>
+        <tr>
+            <td>Sate</td>
+            <td>Rp75.000</td>
+        </tr>
+        <tr>
+            <td>Nasi Goreng</td>
+            <td>Rp20.000</td>
+        </tr>
+    </table>
+    <hr>
+    <h1 class="center text judul">PEMBAYARAN</h1>
+    <table class="table center" style="width: 35%;">
+        <form>
+            <tr>
+                <td>Nama Makanan</td>
+                <td><select class="text" id="makanan">
+                    <option value="rendang">Rendang</option>
+                    <option value="sate">Sate</option>
+                    <option value="nasgor">Nasi Goreng</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Jumlah beli</td>
+                <td><input type="number" name="jumlah" required id="jumlah"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" onclick="total()" value="Proses"></td>
+            </tr>
+            <tr>
+                <td>Jumlah bayar</td>
+                <td id="total">Total belanjaan</td>
+            </tr>
+        </form>
+    </table>
+</body>

@@ -57,15 +57,11 @@
             </tr>
             <tr>
                 <td>Jumlah beli</td>
-                <td><input type="number" name="jumlah" required id="jumlah"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="button" onclick="total()" value="Proses"></td>
+                <td><input type="number" name="jumlah" required id="jumlah" onchange="total()"></td>
             </tr>
             <tr>
                 <td>Jumlah bayar</td>
-                <td id="total">Total belanjaan</td>
+                <td id="total"></td>
             </tr>
         </form>
     </table>
